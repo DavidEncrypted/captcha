@@ -9,7 +9,7 @@ from cStringIO import StringIO
 import numpy
 import time, math
 
-#Global Captcha Objec#
+#Global Captcha Object
 class Captcha(object):
 
     def __init__(self, savefile="File1.jpg", do_seg=0, f_server=0,f_inter=0,  letter='', length=6):
