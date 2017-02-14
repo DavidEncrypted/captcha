@@ -8,7 +8,7 @@ class NeuralNet(object):
         self.ann = self.create_ann()
         self.saveto1 = saveto1
         self.saveto2 = saveto2
-        self.fullList = self.toList(trainfile, trainfile2)
+        self.fullList = self.to_list(trainfile, trainfile2)
         self.trainlist = [self.fullList[0][0:(int(round(len(self.fullList[0]) / 20.00 * 19.00)))],self.fullList[1][0:(int(round(len(self.fullList[0]) / 20.00 * 19.00)))]]
         self.testlist = [self.fullList[0][(int(round(len(self.fullList[0]) / 20.00 * 19.00))):len(self.fullList[0])],
                           self.fullList[1][(int(round(len(self.fullList[0]) / 20.00 * 19.00))):len(self.fullList[0])]]
@@ -31,7 +31,7 @@ class NeuralNet(object):
         ann.set_activation_steepness_output(0.4)
         return ann
 
-    def toList(self, trainfile, trainfile2):
+    def to_list(self, trainfile, trainfile2):
         traindata = self.get_train_data(trainfile)
         print "Read 1"
         traindata2 = self.get_train_data(trainfile2)

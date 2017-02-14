@@ -1,7 +1,7 @@
 from captcha import CapDisplay, captcha
 from fann2 import libfann
 ann = libfann.neural_net()
-ann.create_from_file("./networks/2ndnetwork40.net")
+ann.create_from_file("./networks/ann_fin.net")
 
 
 def toInput(seg):
