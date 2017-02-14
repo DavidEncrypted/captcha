@@ -31,6 +31,9 @@ class NeuralNet(object):
         ann.set_activation_steepness_output(0.4)
         return ann
 
+
+
+
     def to_list(self, trainfile, trainfile2):
         traindata = self.get_train_data(trainfile)
         print "Read 1"
