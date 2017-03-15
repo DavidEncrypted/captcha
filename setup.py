@@ -10,7 +10,6 @@ setup(name="captcha",
       packages=['captcha'],
       install_requires=[
           'bs4',
-          'numpy',
-          'PIL'
+          'numpy'
       ],
       zip_safe=False)

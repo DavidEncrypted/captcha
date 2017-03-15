@@ -1,4 +1,4 @@
-from captcha import Solver
+from captcha import captcha
 
-solver = Solver.Solver('ann_fin.net')
+#solver = Solver.Solver('ann_fin.net')
 

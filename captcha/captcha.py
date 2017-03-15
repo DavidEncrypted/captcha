@@ -73,29 +73,29 @@ class Captcha(object):
         self.captchaf.show()
 
     def segment(self):
-        start = time.time()
+        #start = time.time()
 
-        self.captchaf.save('./stappen/pre_ruis.gif')
+        #self.captchaf.save('./stappen/pre_ruis.gif')
         self.captchaf.remove_groups_touching_white()
-        self.captchaf.save('./stappen/post_ruis.gif')
+        #self.captchaf.save('./stappen/post_ruis.gif')
         self.captchaf.color_whitelist([140,112])
         self.captchaf.remove_small_groups(15)
         self.lineletterps = self.captchaf.get_line_letter_points()
         self.captchaf.grow_letter_into_line(10, self.lineletterps)
 
         self.captchaf.remove_small_groups(15)
-        self.captchaf.save('./stappen/post_lijn.gif')
+        #self.captchaf.save('./stappen/post_lijn.gif')
         self.captchaf.color_whitelist([140])
-        self.captchaf.save('./stappen/post_lijn_list.gif')
+        #self.captchaf.save('./stappen/post_lijn_list.gif')
         self.captchaf.to_black()
         self.captchaf = self.captchaf.blur()
         presegments =  self.captchaf.combine_groups(self.length)
         if presegments == 0:
             return 0
         self.finsegments(presegments)
+        return 1
 
-
-        end = time.time()
+        #end = time.time()
         #print "Process time: {}".format(end - start)
 
     def finsegments(self, presegments):

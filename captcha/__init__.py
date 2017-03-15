@@ -1,1 +1,2 @@
-#init File, Important!
+# init File, Important!
+import captcha

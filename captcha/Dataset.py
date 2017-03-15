@@ -107,16 +107,6 @@ class Dataset(object):
                                     col = int(round(((precol * -1) + 1) * (255 / 2)))
                                     im.putpixel((x, y), col)
                         curl += 1
-
-
-
-
-
-                    #data = []
-                    #data = [[int(n) for n in line.split(' ')]]
-                    #print len(data), data[0]
-
-
         return im
 
     def segs_to_data(self, segs, letter):

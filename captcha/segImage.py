@@ -8,7 +8,7 @@ class segImage(Image.Image):
 
     def __init__(self, im, mode, size, palette, info, category, readonly, pyaccess):
         #Image.Image.__init__(self)
-        sys.setrecursionlimit(3000)
+        sys.setrecursionlimit(5000)
         self.im = im
         self.mode = mode
         self.size = size
