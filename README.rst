@@ -1,7 +1,9 @@
-Alle versies:
+Alle versies (Voordat ik github gebruikte):
+
 https://github.com/DavidEncrypted/captcha_legacy
 
 Toepassing captcha lib:
+
 https://github.com/DavidEncrypted/alphabreak
 
 
