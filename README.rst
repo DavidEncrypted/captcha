@@ -1,3 +1,10 @@
+Alle versies:
+https://github.com/DavidEncrypted/captcha_legacy
+
+Toepassing captcha lib:
+https://github.com/DavidEncrypted/alphabreak
+
+
 Structuur:
 
 captcha Package: 
