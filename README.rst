@@ -79,7 +79,7 @@ http://leenissen.dk/fann/wp/help/installing-fann/
 klaar.
 
 Om de captcha lib te gebruiken:
-
+```
 import captcha, PIL
 
 solver = Solver.Solver()
@@ -89,6 +89,6 @@ captchaim = Image.load("captcha.jpg")
 answer = solver.solve(captchaim)
 
 print answer
-
+```
 
 
