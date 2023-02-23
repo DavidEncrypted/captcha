@@ -2,7 +2,9 @@ This repo contains the code for my highschool graduation project. This was writt
 The goal was to create a python library that is capable of breaking the [SecurImage CAPTCHA](https://www.phpcaptcha.org/).
 The code in this repo is capable of generating the right answer to the captcha about 1 in 7 attempts. This is very usable as the securimage captcha instantly generates a new attempt. Also the code is very simple and thus very quick.
 
-![Example Captcha](captcha.png)
+An example SecurImage CAPTCHA:
+
+![Example Captcha](securimage_show.png)
 
 ## Example application of captcha lib:
 
