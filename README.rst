@@ -1,37 +1,34 @@
-Alle versies (Voordat ik github gebruikte):
 
-https://github.com/DavidEncrypted/captcha_legacy
-
-Toepassing captcha lib:
+Example application of captcha lib:
 
 https://github.com/DavidEncrypted/alphabreak
 
 
-Structuur:
+Structure:
 
 captcha Package: 
 
 Ann.py 
-  Class die het neurale netwerk implementeerd 
+  Class that implements the neural network 
 CapDisplay.py 
-  Class die een manier van displayen van de captcha faciliteerd 
+  Class facilitates displaying the captcha
 captcha.py 
-  Class die het captcha object implementeerd, het belangrijkste object om uiteindelijk captcha's op te lossen 
+  Class that implements the captcha object, the main object to eventually solve captchas 
 Dataset.py 
-  Class die de dataset verwerkt en bruikbaar maakt 
+  Class that processes the dataset and makes it usable 
 graphics.py 
-  Class die het script gebruikt om captcha's te displayen (niet zelf gemaakt) 
+  Class that uses the script to display captchas (not created by myself) 
 segImage.py 
-  Class die het segmenteren van captcha's faciliteerd 
+  Class that facilitates the segmentation of captchas 
 Solver.py
-  Class die uiteindelijk moet worden gemaakt in een toepassing van de package
+  Class that must eventually be created in an application of the package
 p_vs_c Folder:
  game.py
-  Alle code die het spel op de informatiemarkt heeft laten werken
+  All the code that made the game work on the information market
 scripts Folder: 
-  Alle scripts die ik heb gebruikt om mijn package toe te passen en zo captcha's op te lossen
+  All the scripts I used to apply my package to solve captchas
 setup.py 
-  Voor het handig installeren van alle benuttigde libraries
+  For convenient installation of all utilized libraries
 
 
 
@@ -47,13 +44,14 @@ Libraries:
 
   graphics.py http://mcsp.wartburg.edu/zelle/python/graphics.py
 
-Installeren:
+Install:
 
-Installatie is erg lastig, de software gebruikt de externe lib fann, deze lib is erg moeilijk om te installeren omdat hij in C geschreven is en dit in python. Voor al het andere installeren naast fann zijn dit de stappen:
+Installation is very difficult, the software uses the external lib fann, this lib is very difficult to install because it is written in C and this in python. For everything else install besides fann these are the steps:
 
 
-Voor beginners(leraren):
-installeer pip
+For beginners(teachers):
+```
+Install pip
 https://bootstrap.pypa.io/get-pip.py
 download get-pip.py
 'python get-pip.py'
@@ -65,20 +63,22 @@ git clone https://github.com/DavidEncrypted/captcha.git
 anders: ga naar https://github.com/DavidEncrypted/captcha/ klik op 'clone or download' 'Download ZIP' pak zip uit
 ga naar folder captcha
 'cd C:/path/to/folder/captcha/'
+```
 
-Voor computervaardigen:
+For computer savvy people:
+```
 clone repository
-gebruik pip om te installeren:
+use pip to install:
 cd /path/to/clonedrepo/
 'pip install ./'
-alle gebruikte libs installeren nu zichzelf
-installeer libfann:
-https://pypi.python.org/pypi/fann2
-installeer ook de C-versie
-http://leenissen.dk/fann/wp/help/installing-fann/
-klaar.
 
-Om de captcha lib te gebruiken:
+install libfann:
+https://pypi.python.org/pypi/fann2
+install the C-version
+http://leenissen.dk/fann/wp/help/installing-fann/
+done.
+```
+#Usage
 ```
 import captcha, PIL
 
