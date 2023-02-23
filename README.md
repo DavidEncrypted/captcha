@@ -6,6 +6,11 @@ An example SecurImage CAPTCHA:
 
 ![Example Captcha](securimage_show.png)
 
+## How it works
+First the captcha is segmented into individual letters using very basic pixelwise image operations. Like floodfills and edge detections. Then when the characters are segmented they are fed into a neural network that was trained to recognize the characters of this specific CAPTCHA.
+The dataset that the network was trained on was created by modifying the securimage php code. It was changed to automatically generate thousands of single character captchas while also outputting the ground truth character.
+The trained model was about 80% accurate which let to `0.8^6 = 0.26` accuracy of the catcha solver neural network. Which is slightly lowered to 14% total accuracy which is caused by mistakes in the characted segmentation.
+
 ## Example application of captcha lib:
 
 https://github.com/DavidEncrypted/alphabreak
