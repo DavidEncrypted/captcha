@@ -1,13 +1,19 @@
+This repo contains the code for my highschool graduation project. This was written in 2017 when I was 17.
+The goal was to create a python library that is capable of breaking the [SecurImage CAPTCHA](https://www.phpcaptcha.org/).
+The code in this repo is capable of generating the right answer to the captcha about 1 in 7 attempts. This is very usable as the securimage captcha instantly generates a new attempt. Also the code is very simple and thus very quick.
 
-Example application of captcha lib:
+![Example Captcha](captcha.png)
+
+## Example application of captcha lib:
 
 https://github.com/DavidEncrypted/alphabreak
 
 
-Structure:
+# Structure
 
 captcha Package: 
 
+```
 Ann.py 
   Class that implements the neural network 
 CapDisplay.py 
@@ -29,7 +35,7 @@ scripts Folder:
   All the scripts I used to apply my package to solve captchas
 setup.py 
   For convenient installation of all utilized libraries
-
+```
 
 
 Libraries:
@@ -44,41 +50,40 @@ Libraries:
 
   graphics.py http://mcsp.wartburg.edu/zelle/python/graphics.py
 
-Install:
+# Install
 
-Installation is very difficult, the software uses the external lib fann, this lib is very difficult to install because it is written in C and this in python. For everything else install besides fann these are the steps:
+Installation is very difficult for not tech people, the software uses the external lib fann, this lib could be very difficult to install because it is written in C and this in python.
 
 
 For beginners(teachers):
 ```
-Install pip
+# Install pip
 https://bootstrap.pypa.io/get-pip.py
-download get-pip.py
-'python get-pip.py'
-test pip door:
-'pip version'
+# download get-pip.py
+python get-pip.py
+#test pip with
+pip version
 
-als 'git' geinstalleerd op systeem:
+# if 'git' is installed on systeem:
 git clone https://github.com/DavidEncrypted/captcha.git 
-anders: ga naar https://github.com/DavidEncrypted/captcha/ klik op 'clone or download' 'Download ZIP' pak zip uit
-ga naar folder captcha
-'cd C:/path/to/folder/captcha/'
+# else: ga naar https://github.com/DavidEncrypted/captcha/ klik op 'clone or download' 'Download ZIP' pak zip uit
+# cd to folder captcha
+cd C:/path/to/folder/captcha/
 ```
 
 For computer savvy people:
 ```
-clone repository
-use pip to install:
+# clone repository
+# use pip to install:
 cd /path/to/clonedrepo/
-'pip install ./'
+pip install ./
 
-install libfann:
+# install libfann:
 https://pypi.python.org/pypi/fann2
-install the C-version
+# install the C-version
 http://leenissen.dk/fann/wp/help/installing-fann/
-done.
 ```
-#Usage
+# Usage
 ```
 import captcha, PIL
 
